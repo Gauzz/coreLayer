@@ -1,7 +1,8 @@
-require('dotenv').config({ path: __dirname + '/.env'});
+require('dotenv').config({ path: __dirname + '/.env' });
 const express = require('express');
 const mongoose = require('mongoose');
 var userRoute = require('./routes/userRoute');
+var urlDataRoute = require('./routes/urlDataRoute');
 const { genericErrorHandler, unknownRoutesHandler } = require('./handlers/error/errorHandler');
 
 var app = express();
@@ -10,6 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //DEV routes
 app.use('/core/user', userRoute);
+app.use('/core/urlData', urlDataRoute);
 
 // this matches all routes and all methods
 app.use(unknownRoutesHandler);
