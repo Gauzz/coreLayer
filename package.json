@@ -1,0 +1,24 @@
+{
+    "name": "core-layer",
+    "version": "1.0.0",
+    "description": "Core(DB) layer of layered architecture.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "jest tests/unit"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "eslint-plugin-jest": "^24.0.1",
+        "express": "^4.17.1",
+        "http-status-codes": "^2.1.2",
+        "jest": "^26.4.2",
+        "mongoose": "^5.7.12"
+    },
+    "devDependencies": {
+        "eslint": "^7.8.1"
+    }
+}
