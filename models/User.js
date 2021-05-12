@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 const userSchema = new mongoose.Schema({
-    fullName : {type : String},
-    email : {type : String},
-    phoneNumber : {type:String},
-    isDeleted : {type:Boolean, default:false},
-    age : {type:Number}
-}, { 
+    userName: { type: String },
+    authToken: { type: String },
+    password: { type: String },
+    email: { type: String },
+    isDeleted: { type: Boolean, default: false },
+}, {
     strict: true
 });
 
